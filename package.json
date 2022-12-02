@@ -1,0 +1,28 @@
+{
+  "name": "arrf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyanshubisht-rws/nodejs_affiliate_report.git"
+  },
+  "bugs": {
+    "url": "https://github.com/priyanshubisht-rws/nodejs_affiliate_report/issues"
+  },
+  "homepage": "https://github.com/priyanshubisht-rws/nodejs_affiliate_report#readme",
+  "description": ""
+}
