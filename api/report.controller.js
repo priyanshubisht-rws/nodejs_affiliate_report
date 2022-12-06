@@ -35,8 +35,8 @@ module.exports = {
         })
     },
     getReportsByRange: (req,res) => {
-        const query =req.query;
-        getReportByRange(query,(err,results)=> {
+        const body =req.query;
+        getReportByRange(body,(err,results)=> {
             if(err)
             {
                 return res.status(500).json({
@@ -58,10 +58,14 @@ module.exports = {
                 obj[item.r_affiliate].push(item.r_amount);
                 return obj;
             }, {});
+
+            var groups = Object.keys(group_to_values).map(function (key) {
+                return {'name': key, 'data': group_to_values[key]};
+            });
             return res.status(200).json({
                     success:1,
                     categories:category,
-                    revenue:group_to_values
+                    revenue:groups
                  });
         })
     },
