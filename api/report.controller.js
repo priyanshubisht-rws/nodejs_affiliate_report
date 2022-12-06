@@ -35,7 +35,7 @@ module.exports = {
         })
     },
     getReportsByRange: (req,res) => {
-        const body =req.body;
+        const body =req.query;
         getReportByRange(body,(err,results)=> {
             if(err)
             {
