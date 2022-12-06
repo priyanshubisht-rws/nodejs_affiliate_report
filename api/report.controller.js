@@ -35,8 +35,8 @@ module.exports = {
         })
     },
     getReportsByRange: (req,res) => {
-        const body =req.body;
-        getReportByRange(body,(err,results)=> {
+        const query =req.query;
+        getReportByRange(query,(err,results)=> {
             if(err)
             {
                 return res.status(500).json({
